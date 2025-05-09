@@ -16,9 +16,6 @@ function NavBar() {
           <Link to="/Nosotros" className="navbar-brand navBarMe">
             <p>AGENCIAS</p>
           </Link>
-          <Link to="/catalogo" className="navbar-brand navBarMe">
-            <p>BUSCAR SERVICIOS</p>
-          </Link>
           <Link to="/promociones" className="navbar-brand navBarMe">
             <p>PROMOS</p>
           </Link>

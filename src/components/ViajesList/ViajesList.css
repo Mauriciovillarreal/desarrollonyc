@@ -252,17 +252,7 @@ label {
   .Consultas {
     background-color: #ffffff00;
   }
-  .containerForm .image-container {
-    width: 90%;
-    background-image: url('../../../public/img/NYC.png');
-    background-size: cover;
-    /* Ajusta la imagen para cubrir el contenedor */
-    background-position: center;
-    /* Centra la imagen */
-    background-repeat: no-repeat;
-    /* E  vita que la imagen se repita */
-   margin: 50px 0px;
-  }
+
   .fromSearch {
     padding: 50px;
   }
@@ -270,7 +260,7 @@ label {
 
 @media (max-width: 650px) {
   .viajes-container {
-    margin: 86px 0px;
+    margin: 8px 0px;
   }
 }
 

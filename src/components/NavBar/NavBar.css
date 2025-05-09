@@ -9,7 +9,7 @@ nav {
     /* Para que esté encima del resto del contenido */
 
     /* Sombra opcional */
-    padding: 15px 0 8px 0px;
+    padding-top: 10px;
 }
 
 
@@ -38,7 +38,7 @@ nav {
 }
 
 .navLink a {
-    border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 0px solid rgb(255, 255, 255);
     transition: 0.3s;
 }
 

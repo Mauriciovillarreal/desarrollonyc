@@ -68,9 +68,9 @@ const App = () => {
       <NavBar currentUser={currentUser} handleLogout={handleLogout} />
       <Routes>
         {/* --- Rutas Públicas --- */}
-        <Route path="/" element={<Home />} />
+      
         {/* ... otras rutas públicas ... */}
-        <Route path="/catalogo" element={<ViajesList />} />
+        <Route path="/" element={<ViajesList />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/verrutas" element={<RutasFiltradas />} />
         <Route path="/promociones" element={<Promociones />} />

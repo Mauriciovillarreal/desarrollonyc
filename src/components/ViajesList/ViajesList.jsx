@@ -5,6 +5,7 @@ import './ViajesList.css';
 import Swal from 'sweetalert2';
 import ViajesSearchForm from "../ViajesSearchForm/ViajesSearchForm";
 import ViajesResults from "../ViajesResults/ViajesResults";
+import { Cartelera } from "../Cartelera/Cartelera";
 
 const ViajesList = () => {
     const [routes, setRoutes] = useState([]);
@@ -62,9 +63,12 @@ const ViajesList = () => {
         if (foundRoutes.length > 0) {
             setFoundRoutes(foundRoutes);
             setTimeout(() => {
-                if (resultsRef.current) {
-                    resultsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-                }
+               if (resultsRef.current) {
+    const yOffset = -100; // Ajusta este valor según cuán arriba quieras el scroll
+    const y = resultsRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
             }, 200);
         } else {
             Swal.fire({
@@ -183,8 +187,15 @@ const ViajesList = () => {
 
 
 
-                    <div className="image-container" > {/* Ajusta la altura del contenedor */}
-                       
+                    <div className='containerBaner'>
+                        <div className='bannerHome'>
+                            <h1>DESCUENTOS</h1>
+                            <h1>IMPERDIBLES</h1>
+                            <h1>A LA COSTA</h1>
+                            <h6>HASTA UN</h6>
+                            <h2>50%OFF</h2>
+                            <h6>EN BUTACAS Y EMPRESAS SELECCINADAS</h6>
+                        </div>
                     </div>
 
 
@@ -204,7 +215,7 @@ const ViajesList = () => {
                     )}
                 </div>
             </div>
-
+            <Cartelera />
         </div>
     );
 };

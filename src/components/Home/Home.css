@@ -8,17 +8,18 @@
 }
 
 #root {
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 
 .containerBaner {
+    align-items: center;
     display: flex;
     justify-content: center;
     padding: 20px;
-  }
-  
-  .bannerHome {
+}
+
+.bannerHome {
     padding: 40px 20px;
     width: 100%;
     max-width: 800px;
@@ -26,52 +27,55 @@
     text-align: center;
     border-radius: 20px;
     box-sizing: border-box;
-  }
-  
-  /* Titulares grandes */
-  .bannerHome h1 {
+}
+
+/* Titulares grandes */
+.bannerHome h1 {
     font-weight: bold;
-    font-size: 8vw; /* Escala con el ancho del viewport */
+    font-size: 8vw;
+    /* Escala con el ancho del viewport */
     line-height: 1.2;
     margin: 10px 0;
-  }
-  
-  /* El número del descuento */
-  .bannerHome h2 {
+}
+
+/* El número del descuento */
+.bannerHome h2 {
     font-weight: 900;
-    font-size: 15vw; /* Escala con pantalla */
+    font-size: 15vw;
+    /* Escala con pantalla */
     line-height: 1.1;
     color: crimson;
     margin: 10px 0;
-  }
-  
-  /* Subtítulos */
-  .bannerHome h6 {
+}
+
+/* Subtítulos */
+.bannerHome h6 {
     font-size: 4vw;
     margin: 5px 0;
-  }
-  
-  /* Mejora en pantallas medianas y grandes */
-  @media (min-width: 768px) {
+}
+
+/* Mejora en pantallas medianas y grandes */
+@media (min-width: 768px) {
     .bannerHome h1 {
-      font-size: 50px;
+        font-size: 50px;
     }
-  
+
     .bannerHome h2 {
-      font-size: 150px;
+        font-size: 150px;
     }
-  
+
     .bannerHome h6 {
-      font-size: 16px;
+        font-size: 16px;
     }
-  }
-  
+}
+
 
 
 
 .main-content {
-    margin-top: 94px; /* Ajusta este valor según el alto del nav */
-  }
+    margin-top: 94px;
+    /* Ajusta este valor según el alto del nav */
+}
 
 .Home h1 {
     font-size: 15px;

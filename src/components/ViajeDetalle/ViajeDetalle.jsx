@@ -84,9 +84,9 @@ const ViajeDetalle = ({ route, date, returnDate, passengers, origin, destination
 
     return (
         <div className="detalleViaje">
-   <div className="viaje-header">
-                    {route.img && <img src={route.img} alt={`Logo de ${route.empresa}`} />}
-                </div>
+            <div className="viaje-header">
+                {route.img && <img src={route.img} alt={`Logo de ${route.empresa}`} />}
+            </div>
             <div className="grid-detalles">
 
                 <div className="viajeInfo">
@@ -99,7 +99,7 @@ const ViajeDetalle = ({ route, date, returnDate, passengers, origin, destination
 
             </div>
 
-             
+
 
 
 
