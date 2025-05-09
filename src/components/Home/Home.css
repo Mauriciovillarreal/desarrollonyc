@@ -1,0 +1,155 @@
+.Home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#root {
+    margin-top: 90px;
+}
+
+
+.containerBaner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .bannerHome {
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Titulares grandes */
+  .bannerHome h1 {
+    font-weight: bold;
+    font-size: 8vw; /* Escala con el ancho del viewport */
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+  
+  /* El número del descuento */
+  .bannerHome h2 {
+    font-weight: 900;
+    font-size: 15vw; /* Escala con pantalla */
+    line-height: 1.1;
+    color: crimson;
+    margin: 10px 0;
+  }
+  
+  /* Subtítulos */
+  .bannerHome h6 {
+    font-size: 4vw;
+    margin: 5px 0;
+  }
+  
+  /* Mejora en pantallas medianas y grandes */
+  @media (min-width: 768px) {
+    .bannerHome h1 {
+      font-size: 50px;
+    }
+  
+    .bannerHome h2 {
+      font-size: 150px;
+    }
+  
+    .bannerHome h6 {
+      font-size: 16px;
+    }
+  }
+  
+
+
+
+.main-content {
+    margin-top: 94px; /* Ajusta este valor según el alto del nav */
+  }
+
+.Home h1 {
+    font-size: 15px;
+}
+
+.ToWhatsApp {
+    position: fixed;
+    bottom: 20px;
+    right: -65px;
+    z-index: 1000;
+    /* Asegura que el botón esté encima de otros elementos */
+}
+
+.ToWhatsApp a img {
+    width: 60px;
+}
+
+.btn-wa {
+    position: relative;
+    bottom: 10px;
+    right: 90px;
+}
+
+a img {
+    width: 100px;
+}
+
+.btn-wa:before,
+.btn-wa:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    background-color: #258d25;
+    border-radius: 50%;
+    animation: onda 1.7s infinite;
+}
+
+.btn-wa::before {
+    animation-delay: 1s;
+}
+
+.btn-wa::after {
+    animation-delay: 1.5s;
+}
+
+.btn-wa img {
+    position: relative;
+    z-index: 2;
+}
+
+
+@keyframes onda {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .promomdq {
+        height: 300px;
+        /* Ajusta la altura para pantallas más pequeñas */
+        background-size: cover;
+        /* Se sigue asegurando que cubra todo el contenedor */
+        border-radius: 5px;
+    }
+}

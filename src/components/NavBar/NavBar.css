@@ -1,0 +1,56 @@
+/* Asegúrate de que el nav tenga espacio suficiente y estilo base */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    /* Asegúrate de que el fondo no sea transparente */
+    z-index: 1000;
+    /* Para que esté encima del resto del contenido */
+
+    /* Sombra opcional */
+    padding: 15px 0 8px 0px;
+}
+
+
+/* Contenedor general */
+.containerNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo centrado */
+.containerNav img {
+    width: 70px;
+    /* Ajusta según tamaño deseado */
+    margin-bottom: 10px;
+    /* Espacio entre logo y links */
+}
+
+/* Contenedor de los links en fila con espacio entre ellos */
+.navLink {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    /* Limita ancho máximo para que no se separen demasiado */
+}
+
+.navLink a {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.navLink a:hover {
+    border-bottom: 3px solid #CA2A31;
+}
+
+/* Estilos opcionales para los links */
+.navBarMe p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    font-size: 12px;
+}
